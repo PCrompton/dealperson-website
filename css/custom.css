@@ -1,0 +1,279 @@
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.navbar-bg-custom {
+    background: white !important;
+    padding: 23px 16px;
+}
+.nav-custom a {
+	color: #135e7c;
+	font-weight: 500;
+	font-size: 16px;
+}
+.navbar-nav li a {
+    color: #135e7c !important;
+}
+button:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 2rem;
+}
+
+.reg-button {
+    border: 0.5pt solid #1990ce;
+    border-radius: 5px;
+    padding: 8px 15px !important;
+}
+.desk-hide {
+	display: none;
+}
+}
+
+@media (max-width: 991px) {
+	.nav-custom {
+    margin-top: 25px;
+}
+.desk-show {
+	display: none;
+}
+}
+
+
+
+  .main-header {
+    height: 88vh;
+    min-height: 300px;
+    background: #f8f9fd;
+  }
+
+.welcome-title {
+	font-weight: bold;
+	font-size: 28px;
+	color: #135e7c;
+	margin-top: 86px;
+}
+.search-title {
+	font-size: 18px;
+	font-weight: 300;
+	color: #135e7c;
+}
+.form-search-custom {
+    height: 53px;
+    border-left: 0;
+}
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ced4da;
+}
+.search-icon {
+	    background: white;
+    border: 1px solid #ced4da;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    padding-left: 13px;
+}
+.btn-search-custom {
+    background: #07b38c;
+    color: white;
+    width: 101px;
+    height: 53px;
+    border-radius: 0px 5px 5px 0;
+    font-size: 20px;
+}
+
+::placeholder {
+	color: #8296ad !important;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+.mt-25 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.m60 {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.m60:first-child {
+	margin-top: 115px;
+}
+.t75 {
+	margin-top: 75px;
+}
+@media (max-width: 991px) {
+.t75 {
+	margin-top: 35px;
+}
+}
+.mt-110 {
+	margin-top: 63px;
+}
+@media (max-width: 991px) {
+.mt-110 {
+    margin-top: 10px;
+    width: 50%;
+}
+}
+.mw-310 {
+	max-width: 310px;
+}
+@media (max-width: 991px) {
+.mw-310 {
+	max-width: 270px;
+}
+.logo {
+    width: 200px;
+}
+.navbar-light .navbar-toggler, .navbar-light .navbar-toggler:hover {
+    color: rgba(0,0,0,.5);
+    border: 0;
+    text-align: right;
+    padding: 0;
+    outline: 0;
+}
+.navbar-light .navbar-brand {
+    padding: 0;
+}
+}
+
+.service-title {
+	    font-weight: 600 !important;
+    color: #135e7c;
+    font-size: 26px;
+}
+.gr-title {
+	color: #07b38c;
+}
+.service-body {
+	color: #284753;
+	font-weight: 400;
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.footer-bg {
+    min-height: 330px;
+    background: #f8f9fd;
+}
+.footer-bg h4 {
+	font-weight: 600 !important;
+    color: #135e7c;
+    font-size: 26px;
+    padding-top: 50px;
+}
+.footer-bg p {
+	margin: 0 auto;
+    color: #284753;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.get-deals-btn, .register-btn {
+	width: 140px;
+	height: 45px;
+	font-size: 18px;
+	font-weight: 400;
+	border-radius: 4px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	border: 0;
+	margin-top: 25px;
+}
+.get-deals-btn {
+	background: #07b38c;
+}
+.register-btn {
+	background: #146f9e;
+}
+.footer-credit {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+
+html,body {
+  height: 100%;
+}
+
+.left-pane {
+    background: #f8f9fd;
+    display: flex;
+    align-items: center;
+}
+
+  @media (min-width: 992px) {
+.left-pane {
+    height: calc(100% + 87.31px);
+    background: #f8f9fd;
+    display: flex;
+    align-items: center;
+    margin-top: -87.31px;
+}
+    .right-pane {
+      padding-left: 60px;
+    }
+  }
+  .center-content {
+    margin: auto;
+    padding-top: 12px;
+  }
+  .body-container {
+      height: 100%;
+  }
+
+.reg-form .form-control {
+  height: 42px;
+      border: 1px solid #e1e2e4;
+    margin-bottom: 13px;      
+}
+.navbar-brand {
+  z-index: 2;
+}
+.btn-submit {
+  background: #07b38c;
+  width: 100%;
+  height: 42px;
+  border: 1px solid #07b38c;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+.reg-title {
+  font-weight: bold;
+    font-size: 28px;
+    color: #135e7c;
+    margin-top: 35px;
+}
+.reg-desc {
+  font-weight: 300;
+  font-size: 18px;
+  color: #135e7c;
+  margin-bottom: 44px;
+}
+::placeholder {
+  font-weight: 200;
+  font-size: 15px;
+  color: #93a6ae;
+}
+
+@media (max-width: 991px) {
+.body-container {
+    max-width: 720px;
+    margin: 0 auto;    
+}
+}
+@media (max-width: 767px) {
+.body-container {
+    max-width: 540px;
+    margin: 0 auto;    
+}
+}
