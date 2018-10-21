@@ -5,6 +5,7 @@ body {
 .navbar-bg-custom {
     background: white !important;
     padding: 23px 16px;
+border-bottom: 1px solid #f2f3f4;    
 }
 .nav-custom a {
 	color: #135e7c;
@@ -159,7 +160,6 @@ input:focus {
 }
 
 .footer-bg {
-    min-height: 330px;
     background: #f8f9fd;
 }
 .footer-bg h4 {
@@ -169,11 +169,13 @@ input:focus {
     padding-top: 50px;
 }
 .footer-bg p {
-	margin: 0 auto;
+    margin: 30px auto 0;
+    padding: 13px 0;
     color: #284753;
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 .get-deals-btn, .register-btn {
 	width: 140px;
@@ -276,4 +278,338 @@ html,body {
     max-width: 540px;
     margin: 0 auto;    
 }
+}
+
+
+
+
+/* Search Chat Page */
+
+.bubble-user-chat {
+  text-align: left;
+  margin-right: 59px;  
+}
+.bubble-user-chat-box {
+  display: inline-block;
+  margin: 0.25em;
+  min-height: 1em;
+  padding: 0.25em 0.75em;
+  position: relative;
+  border-radius: 0.5em;
+  line-height: 1.5;
+  color: white;
+  background-color: #1990ce;
+}
+.bubble-user-chat-box::before {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 2em;
+  position: absolute;
+  right: -1em;
+  bottom: 0;
+  border-left: 2em solid #1990ce;
+  border-bottom-left-radius: 100%;
+  z-index: -1;
+}
+.bubble-dp-chat {
+  text-align: left;
+  margin-left: 59px;
+}
+.bubble-dp-chat-block {
+  display: inline-block;
+  margin: 0.25em;
+  min-height: 1em;
+  padding: 0.25em 0.75em;
+  position: relative;
+  border-radius: 0.5em;
+  line-height: 1.5;
+  color: white;
+  background-color: #07b38c;
+  max-width: 380px;
+}
+.bubble-dp-chat-block::before {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 2em;
+  position: absolute;
+  left: -1em;
+  bottom: 0;
+  border-right: 2em solid #07b38c;
+  border-bottom-right-radius: 100%;
+  z-index: -1;
+}
+
+time {
+  font-size: 11px;
+    padding: 0 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+.dp-avatar {
+    background-image: url(/../deal-person/images/me.png);
+    height: 40px;
+    width: 40px;
+    background-size: 29px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -31px;
+    left: 15px;
+}
+
+.user-avatar {
+    background-image: url(/../deal-person/images/you.png);
+    height: 40px;
+    width: 40px;
+    background-size: 29px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -31px;
+    right: 15px;
+}
+
+.user-chat-block, .dp-chat-block {
+  margin-bottom: 13px;
+}
+.user-chat-block {
+  text-align: right;
+  float: right;
+  clear: both;
+}
+.user-chat-block {
+  float: right;
+  clear: both;
+}
+.user-chat-block time {
+  text-align: right;
+  margin-right: 62px;
+}
+.dp-chat-block {
+  float: left;
+  clear: both;
+}
+
+.dp-chat-block time {
+  text-align: left;
+  margin-left: 62px;
+}
+
+.user-options {
+    margin: 22px 17px 0px 73px;
+}
+@media (max-width: 767px) {
+.user-options {
+    margin: 22px 17px 0px 50px;
+}
+}
+.user-options span {
+    border: 1px dashed #07b38c;
+    font-size: 14px;
+    margin: 0px 4px 8px 0;
+    padding: 14px 11px;
+    border-radius: 5px;
+    background: #f1fbf9;
+    cursor: pointer;
+    display: inline-block;
+    clear: both;
+}
+.user-options span:hover {
+      background: #dbf7f1;
+}
+.m20 {
+  margin-top: 40px;
+}
+
+
+
+/* Coupon Page */
+
+.coupon-widget {
+    text-align: center;
+    border: 2px dashed #1990ce;
+    margin: 26px auto;
+    padding: 35px 0 20px;
+    border-radius: 10px;
+    background: white;
+}
+.business-name {
+    font-weight: 600;
+    font-size: 19px;
+}
+.action-buttons .btn {
+    width: 112px;
+    background: #07b38c;
+    font-size: 14px;
+    color: white;
+    margin: 2px;
+}
+
+
+
+.coupon-widget h5 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #404040;
+}
+.action-buttons {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.deal-claim {
+      color: #096ba1;
+    font-weight: bold;
+    font-size: 19px;
+}
+.qr-code {
+  width: 175px;
+}
+.powered-by {
+      margin: 35px 0 15px;
+    width: 200px;
+}
+.deal-id-coupon {
+    font-size: 13px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    color: #87a8c1;
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .action-buttons .btn {
+    width: 150px;
+    display: block;
+    margin: 6px auto;    
+}
+}
+
+.call-icon {
+      padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+  .deal-list-block {
+border: 1px solid #c5e0f9;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fafdff;
+    min-height: 100%;
+}
+.deal-name {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #1471a1;
+    min-height: 42px;    
+}
+.separator {
+    margin-bottom: 0;
+}
+.deal-id {
+    font-size: 12px;
+/*    border-top: 1px solid #e8e8e8;*/
+margin-top: 11px;
+    margin-bottom: 11px;
+    color: #87a8c1;
+    font-weight: 400;
+        float: left;
+}
+.deal-trash {
+margin-top: 11px;
+    float: right;
+}
+.m10 {
+  margin-top: 20px;
+}
+/*.deal-list-block:hover * {
+    background: #07b38c;
+    color: white;
+}*/
+.deal-list-block:hover * {
+    color: #135c82;
+}
+.deal-list-block:hover {
+    border: 1px solid #07b38c;
+    cursor: pointer;
+
+/*    background: #07b38c;*/
+}
+@media (max-width: 991px) {
+.m20 .col-lg-3, .m10 .col-lg-3  {
+    margin-bottom: 8px;
+}
+.m10 {
+    margin-top: 0px;
+}
+}
+
+img.deal-trash {
+  cursor: pointer;
+}
+
+.deals-available {
+    display: block;
+    margin-bottom: 40px;
+    color: #10689d;
+    text-align: center;
+    margin-top: 40px;
+}
+.deals-available h4 {
+    font-weight: 800;
+    margin-bottom: 2px;
+    font-size: 23px;
+}
+.deals-available p {
+    font-size: 14px;
+}
+
+.deal-detail-header {
+    text-align: center;
+    display: block;
+    background: #07b38c;
+}
+.deal-detail-header h4 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 17px;
+}
+.deal-detail-body {
+    text-align: center;
+    margin-top: 27px;
+    font-size: 14px;
+    color: #0f7b63;    
+}
+.deal-detail-body p {
+    margin-bottom: 35px;
+}
+h4.deal-seller {
+    font-weight: bold;
+    font-size: 18px;
+    color: #229b80;    
+}
+.dismiss {
+    padding: 1rem;
+    margin: -0.8rem -1rem -1rem auto;
+    position: absolute;
+    right: 19px;
+}
+b.deal-date {
+    font-weight: 400;
+    display: block;
+}
+.calendar-img {
+  margin-bottom: 10px;
+}
+.modal-footer .deal-id {
+    font-size: 12px;
+    margin: 0;
 }
