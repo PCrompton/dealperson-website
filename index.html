@@ -18,6 +18,48 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
+
+    <!-- Drop Down links -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+
 </head>
 
 <body>
@@ -52,19 +94,27 @@
 
     <!-- Header BG -->
     <div class="text-center">
+
+
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="welcome-title">Hi, Welcome to DealPerson</h1>
                     <p class="search-title">Name a product or service you would like a deal on.</p>
                 </div>
-                <div class="col-12 col-md-10 col-lg-7" style="margin: 0 auto;">
+
+
+
+
+
+                <div class="col-12 col-md-10 col-lg-7 ui-widget" style="margin: 0 auto;">
                     <form action="chat.html">
                         <div class="input-group mt-25">
                             <span class="input-group-append">
                                 <button type="submit" class="search-icon"><img src="images/search-icon.png"></button>      	
                             </span>
-                            <input class="form-control form-search-custom" type="search" type="search" placeholder="i.e pizza, car, house painting...">
+                            <input id="tags" class="form-control form-search-custom" type="search" type="search" placeholder="i.e pizza, car, house painting...">
                             <span class="input-group-append">
                               <button class="btn btn-lg btn-search-custom" type="submit">Deal</button>
                             </span>
@@ -161,7 +211,6 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
